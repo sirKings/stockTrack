@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#4e67a8</color>
+<color name="colorPrimaryDark">#4e67a8</color>
+<color name="colorAccent">#00bbd1</color>
+<color name="colorGrey">#646262</color>
+<color name="white">#ffffff</color>
+
+<color name="black">#000000</color>
+<color name="green_card">#FF669900</color>
+<color name="red_card">#fc5a48</color>
+<color name="blue_color_picker">#333334</color>
+<color name="brown_color_picker">#AF593E</color>
+<color name="green_color_picker">#01a368</color>
+<color name="orange_color_picker">#ff861f</color>
+<color name="red_color_picker">#860523</color>
+<color name="red_orange_color_picker">#c51947</color>
+<color name="sky_blue_color_picker">#76D7EA</color>
+<color name="violet_color_picker">#8359a3</color>
+<color name="yellow_color_picker">#e0282827</color>
+<color name="yellow_green_color_picker">#C5E17A</color>
+<color name="tool_bg">#151414</color>
+<color name="light_green">#ffffff</color>
+<color name="light_red">#7aaba9a9</color>
+</resources>
+

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "218728056763",
+    "firebase_url": "https://stocktrader-21772.firebaseio.com",
+    "project_id": "stocktrader-21772",
+    "storage_bucket": "stocktrader-21772.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218728056763:android:18b8e3ab201b2a13",
+        "android_client_info": {
+          "package_name": "com.ladrope.stocktrader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218728056763-83okamsfnuianbhocjk792a29c3hgtcq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ladrope.stocktrader",
+            "certificate_hash": "9db49aba87766f95c15fe541f486e1dd7d2c31ee"
+          }
+        },
+        {
+          "client_id": "218728056763-riv5kui6pj35h4s0lsjjq4u0jdfc7ado.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANIbW_u1NfTFygSF7KXC1mzPHt14xc7WU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218728056763-riv5kui6pj35h4s0lsjjq4u0jdfc7ado.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

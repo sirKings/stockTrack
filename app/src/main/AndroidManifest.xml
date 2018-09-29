@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ladrope.stocktrader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Branch App Links (optional) -->
+            <!-- <intent-filter android:autoVerify="true"> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+            <!-- <data android:scheme="https" android:host="example.app.link" /> -->
+            <!-- <data android:scheme="https" android:host="example-alternate.app.link" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".MainActivity">
+
+            <!-- Branch URI Scheme -->
+            <intent-filter>
+                <data android:scheme="stocktrader" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".AddTipActivity" />
+        <activity android:name=".ExpertActivity" />
+        <activity android:name=".AddNewsActivity" />
+        <activity android:name=".CallOpenActivity" />
+
+        <!-- Branch init -->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_fiA0IAUS2yEBz47d3VuC4ceaCAoe4uLb" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="secret_live_Y5i8PF8fTTnCrmajYMYxdOkVwOSR63k4" />
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="false" /> <!-- Set to true to use Branch_Test_Key -->
+
+
+        <!-- Branch install referrer tracking (optional) -->
+        <!-- <receiver android:name="io.branch.referral.InstallListener" android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.android.vending.INSTALL_REFERRER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".AddNotification" />
+        <activity android:name=".ReadMoreActivity" />
+        <activity android:name=".TableActivity" />
+        <activity android:name=".TipDetailActivity" />
+        <activity android:name=".TermsActivity" />
+        <activity android:name=".HeadingActivity" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".TipListActivity" />
+        <activity android:name=".TradeActivity" />
+        <activity android:name=".EditNews" />
+        <activity android:name=".EditNewsAsTip" />
+        <activity android:name=".NewsReadMore" />
+        <activity android:name=".NotificationsActivity"></activity>
+    </application>
+
+</manifest>
